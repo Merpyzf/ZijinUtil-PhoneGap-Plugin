@@ -5,54 +5,34 @@
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>ZijinUtil</name>
 	<js-module src="www/ZijinUtil.js" name="ZijinUtil">
-		<clobbers target="window.plugins.zijinutil" />
+		<clobbers target="cordova.plugins.ZijinUtil" />
 	</js-module>
 	<platform name="android">
-		<source-file src="src/android/nl/xservices/plugins/ZijinUtil.java" target-dir="src/nl/xservices/plugins" />
-		<source-file src="src/android/libs/gson-2.8.5.jar" target-dir="libs" />
-		<source-file src="src/android/libs/cw-deviceapi.jar" target-dir="libs" />
-		<source-file src="src/android/libs/arm64-v8a/libbarcodereader44.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libDeviceAPI.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libHHPScanInterface.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libHSMDecoderAPI.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libHsmKil.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libIAL.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libIGLBarDecoder.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libIGLImageAE.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/arm64-v8a/libSDL.so" target-dir="src/main/jniLibs/arm64-v8a"/>
-		<source-file src="src/android/libs/armeabi/libbarcodereader.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libbarcodereader43.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libbarcodereader44.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libDeviceAPI.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libHHPScanInterface.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libHSMDecoderAPI.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libHsmKil.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libIAL.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libIGLBarDecoder.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libIGLImageAE.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi/libSDL.so" target-dir="src/main/jniLibs/armeabi"/>
-		<source-file src="src/android/libs/armeabi-v7a/libbarcodereader.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libbarcodereader43.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libbarcodereader44.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libDeviceAPI.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libHHPScanInterface.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libHSMDecoderAPI.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libHsmKil.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libIAL.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libIGLBarDecoder.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libIGLImageAE.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/libs/armeabi-v7a/libSDL.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
-		<source-file src="src/android/nl/xservices/plugins/Plugin_P80.java" target-dir="src/nl/xservices/plugins" />
-        <source-file src="src/android/nl/xservices/plugins/Plugin_U8.java" target-dir="src/nl/xservices/plugins" />
-        <source-file src="src/android/nl/xservices/plugins/FileWRTool.java" target-dir="src/nl/xservices/plugins" />
+		<source-file src="src/android/libs/classes.jar" target-dir="libs" />
+		<source-file src="src/android/libs/DeviceAPIver20150906.jar" target-dir="libs" />
+		<source-file src="src/android/libs/hitownsdk.jar" target-dir="libs" />
+		<source-file src="src/android/libs/ModuleAPI_Android_2.31.0.0.jar" target-dir="libs" />
+		<source-file src="src/android/libs/trinea-android-common.jar" target-dir="libs" />
+
+		<source-file src="src/android/libs/armeabi/libModuleAPI_Android.so" target-dir="src/main/jniLibs/armeabi"/>
+		<source-file src="src/android/libs/armeabi/libscan_jni.so" target-dir="src/main/jniLibs/armeabi"/>
+		<source-file src="src/android/libs/armeabi-v7a/libModuleAPI_Android.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
+		<source-file src="src/android/libs/armeabi-v7a/libscan_jni.so" target-dir="src/main/jniLibs/armeabi-v7a"/>
+
+		<source-file src="src/android/nl/xservices/plugins/base/ICordovaPlugin.java" target-dir="src/nl/xservices/plugins/base" />
+		<source-file src="src/android/nl/xservices/plugins/plugin/UHFPlugin.java" target-dir="src/nl/xservices/plugins/plugin" />
+		<source-file src="src/android/nl/xservices/plugins/plugin/ScanPlugin.java" target-dir="src/nl/xservices/plugins/plugin" />
+		<source-file src="src/android/nl/xservices/plugins/MyApp.java" target-dir="src/nl/xservices/plugins" />
+		<source-file src="src/android/nl/xservices/plugins/utils/DevBeep.java" target-dir="src/nl/xservices/plugins/utils" />
+        <source-file src="src/android/nl/xservices/plugins/ZijinUtil.java" target-dir="src/nl/xservices/plugins" />
+
+		<resource-file src="src/android/raw/beep_err.wav" target="res/raw/beep_err.wav" />
+		<resource-file src="src/android/raw/beep_ok.wav" target="res/raw/beep_ok.wav" />
+
 		<config-file parent="/*" target="res/xml/config.xml">
 			<feature name="ZijinUtil"><param name="android-package" value="nl.xservices.plugins.ZijinUtil" /></feature>
 		</config-file>
-		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+
 		<framework src="src/android/build.gradle" custom="true" type="gradleReference" />
-		<resource-file src="src/android/aar/barcode_sdk.aar" target="aar/barcode_sdk.aar"/>
-		<resource-file src="src/android/aar/fp_jra_sdk_20190920.aar" target="aar/fp_jra_sdk_20190920.aar"/>
-		<resource-file src="src/android/aar/r2000uhf_sdk.aar" target="aar/r2000uhf_sdk.aar"/>
-		<resource-file src="src/android/aar/serialport_sdk.aar" target="aar/serialport_sdk.aar"/>
 	</platform>
 </plugin>
